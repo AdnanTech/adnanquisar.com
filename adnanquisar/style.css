@@ -49,11 +49,37 @@ a {
 }
 
 /* ----------------------------------------------------------------
+	Navigation bar
+-----------------------------------------------------------------*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li{
+  display: inline;
+}
+
+
+nav ul li a {
+  padding-right: 4em;
+  text-decoration: none;
+}
+
+#resume {
+  border-style: solid;
+  padding: 10px;
+}
+
+/* ----------------------------------------------------------------
 	Work Experience
 -----------------------------------------------------------------*/
 
 .jobDesc {
-  list-style-type: none;
+  list-style-type: square;
 }
 
 #workWebsite {
