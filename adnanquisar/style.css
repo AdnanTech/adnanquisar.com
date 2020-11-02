@@ -1,11 +1,13 @@
 /* ----------------------------------------------------------------
 	Base
 -----------------------------------------------------------------*/
+* {
+  font-family: Bahnschrift;
+}
 
 body {
   background-color: #1d1f21;
   color: azure;
-  font-family: Bahnschrift;
   padding: 32px;
 }
 
@@ -48,6 +50,8 @@ a {
   color: #2bbc8a;
 }
 
+a:hover {color: cornflowerblue;}
+
 /* ----------------------------------------------------------------
 	Navigation bar
 -----------------------------------------------------------------*/
@@ -57,21 +61,31 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  
 }
 
 nav ul li{
   display: inline;
+  font-weight: bold;
 }
 
-
 nav ul li a {
-  padding-right: 4em;
+  margin: 1em 4em;
   text-decoration: none;
 }
 
-#resume {
-  border-style: solid;
-  padding: 10px;
+#resume button{
+  font-weight: bold;
+  height: 50px;
+  width: 150px;
+  margin-left: 3em;
+  border: none;
+}
+
+#resume button:hover {
+  color: white;
+  background-color: cornflowerblue;
+  cursor: pointer;
 }
 
 /* ----------------------------------------------------------------
