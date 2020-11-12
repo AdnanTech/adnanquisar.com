@@ -25,31 +25,34 @@
     <!-- Header
     ============================================= -->
     <header>
-      <h1>Adnan Quisar</h1>
-      <h5>Portfolio</h5>
+        <!-- Navbar
+        ============================================= -->
+        <nav >
+          <a href="#" class="logo">Logo</a>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <!-- <button id="resume" type="button"><a href="/">Resume</a></button>  -->
+              <a href="#">Resume</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="banner"></section>
+        <h1>Adnan Quisar</h1>
+        <h5>Portfolio</h5>
     </header>
 
-    <!-- Navbar
-    ============================================= -->
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li id="resume">
-          <button type="button">Resume</button> 
-        </li>
-      </ul>
-    </nav>
 
     <!-- About
     ============================================= -->
@@ -108,5 +111,14 @@
       <p id="copyright">Designed & Built by Adnan Quisar </p>
     </footer>
     
+    <!-- JavaScripts
+    ============================================= -->
+    <script type="text/javascript">
+    window.addEventListener("scroll", function()
+    {
+      var header = document.querySelector("nav");
+      nav.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
 </body>
 </html>
